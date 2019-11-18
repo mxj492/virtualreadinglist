@@ -37,7 +37,7 @@ class FormSearch extends Component {
                     books.push(book)
                 })
                 
-                //this.setState({ results: res.data.items })})
+                
                 
                 this.setState({ results: books })})
             .catch(err => this.setState({ error: err.items }));
@@ -63,7 +63,7 @@ class FormSearch extends Component {
                 <Row>
                     <Col size="12">
                         <Jumbotron>
-                            <h1>Search for Books!</h1>
+                            <h1>Search for Virtual Books!</h1>
                             <input type="text" name="search" className="m-3 p-2" onChange={this.handleInputChange} placeholder="Book Name" /><br />
                         <button type="submit" className="btn btn-success" onClick={this.handleSubmit}>Search</button>
                         </Jumbotron>
